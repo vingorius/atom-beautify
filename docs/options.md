@@ -495,6 +495,30 @@ List of tags (defaults to inline) that should not be reformatted (Supported by J
 
 End output with newline (Supported by JS Beautify)
 
+####  [Jade - Indent size](#jade---indent-size) 
+
+**Key**: `jade_indent_size`
+
+**Default**: `4`
+
+**Type**: `integer`
+
+**Description**:
+
+Indentation size/length (Not supported by any beautifiers)
+
+####  [Jade - Indent char](#jade---indent-char) 
+
+**Key**: `jade_indent_char`
+
+**Default**: ` `
+
+**Type**: `string`
+
+**Description**:
+
+Indentation character (Not supported by any beautifiers)
+
 ####  [Java - Config Path](#java---config-path) 
 
 **Key**: `java_configPath`
@@ -1460,6 +1484,36 @@ Default Beautifier to be used for HTML
 **Description**:
 
 Automatically beautify HTML files on save
+
+####  [Language Config - Jade - Disable Beautifying Language](#language-config---jade---disable-beautifying-language) 
+
+**Key**: `language_jade_disabled`
+
+**Type**: `boolean`
+
+**Description**:
+
+Disable Jade Beautification
+
+####  [Language Config - Jade - Default Beautifier](#language-config---jade---default-beautifier) 
+
+**Key**: `language_jade_default_beautifier`
+
+**Type**: `string`
+
+**Description**:
+
+Default Beautifier to be used for Jade
+
+####  [Language Config - Jade - Beautify On Save](#language-config---jade---beautify-on-save) 
+
+**Key**: `language_jade_beautify_on_save`
+
+**Type**: `boolean`
+
+**Description**:
+
+Automatically beautify Jade files on save
 
 ####  [Language Config - Java - Disable Beautifying Language](#language-config---java---disable-beautifying-language) 
 

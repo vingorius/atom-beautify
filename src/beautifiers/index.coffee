@@ -42,6 +42,7 @@ module.exports = class Beautifiers extends EventEmitter
     'gherkin'
     'gofmt'
     'fortran-beautifier'
+    'jade'
     'js-beautify'
     'jscs'
     'perltidy'

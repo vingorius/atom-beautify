@@ -27,6 +27,7 @@ module.exports = class Languages
     "fortran"
     "handlebars"
     "html"
+    "jade"
     "java"
     "javascript"
     "json"

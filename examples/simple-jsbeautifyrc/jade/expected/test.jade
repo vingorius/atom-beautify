@@ -1,0 +1,33 @@
+extends ../layout/basiclayout
+
+block content
+    div.loading(style={ "display" : "none" })
+        span#loading_text
+        div.double-bounce1
+        div.double-bounce2
+    canvas.empty_canvas(style={ "display" : "none" })
+    div.container.chart_base_container
+        div.row
+            div#comutationplot_empty_lt(style={'float' : 'left', 'padding' : '0px', 'margin' : '0px', 'width' : '150px', 'height' : '100px'})
+            div#comutationplot_sample(style={'float': 'left', 'padding-bottom': '0px', 'margin': '0px', 'width': '1100px', 'height': '100px', 'overflow-y': 'hidden', 'overflow-x': 'hidden'})
+            div#comutationplot_scale(style={'float': 'left', 'padding': '0px', 'margin': '0px', 'width': '150px', 'height': '100px'})
+        div.row
+            div#comutationplot_gene(style={'padding': '0px', 'margin': '0px', 'float': 'left', 'width': '150px', 'height': '650px'})
+            div#comutationplot_heatmap(style={'padding': '0px', 'margin': '0px', 'float': 'left', 'width': '1100px', 'height': '650px', 'overflow-x' : 'hidden', 'overflow-y': 'hidden', 'border' : '1px solid rgb(236, 236, 236)'})
+            div#comutationplot_pq(style={'padding': '0px', 'margin': '0px', 'float': 'left', 'width': '150px', 'height': '650px'})
+        div.row
+            div#comutationplot_empty_lb(style={'float' : 'left', 'padding' : '0px', 'margin' : '0px', 'width' : '150px', 'height' : '100px'})
+            div#comutationplot_legend(style={'float' : 'left', 'padding': '0px', 'margin': '0px', 'width': '1100px', 'height': '100px'})
+            div#comutationplot_empty_rb(style={'float' : 'left', 'padding' : '0px', 'margin' : '0px', 'width' : '150px', 'height' : '100px'})
+    div.tooltip_chart(style={ "display" : "none" })
+block append scripts
+    script(src='/bower_components/canvg-gabelerner/StackBlur.js')
+    script(src='/bower_components/canvg-gabelerner/rgbcolor.js')
+    script(src='/bower_components/canvg-gabelerner/canvg.js')
+    script(src='/bower_components/imagesloaded/imagesloaded.pkgd.js')
+    script(src='/bower_components/html2canvas/build/html2canvas.js')
+    script(src='/bower_components/requirejs/require.js', data-main='/js/index')
+block append stylesheets
+    link(rel='stylesheet', href='/bower_components/spinkit/css/spinkit.css')
+    link(rel='stylesheet', href='/stylesheets/chart/chart.css')
+    link(rel='stylesheet', href='/stylesheets/chart/comutationplot.css')
